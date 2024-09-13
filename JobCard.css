@@ -1,0 +1,100 @@
+/* Base styles for the job card */
+.job-card {
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    transition: transform 0.3s, box-shadow 0.3s;
+    /* Flexbox for layout */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .job-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .job-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .job-details {
+    color: #555;
+    margin: 5px 0;
+  }
+  
+  .job-location {
+    font-style: italic;
+  }
+  
+  .job-salary {
+    font-weight: bold;
+    color: #007bff;
+  }
+  
+  .job-phone {
+    color: #28a745;
+  }
+  
+  .job-card-button {
+    margin: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  .job-card-button:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
+  .job-card-bookmark {
+    background-color: #ffc107;
+    color: #fff;
+  }
+  
+  .job-card-bookmark:hover {
+    background-color: #e0a800;
+  }
+  
+  /* Responsive styles */
+  @media (max-width: 768px) {
+    .job-card {
+      margin: 10px;
+      padding: 15px;
+    }
+  
+    .job-title {
+      font-size: 1.1rem;
+    }
+  
+    .job-card-button {
+      padding: 8px 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .job-card {
+      margin: 5px;
+      padding: 10px;
+    }
+  
+    .job-title {
+      font-size: 1rem;
+    }
+  
+    .job-card-button {
+      padding: 6px 12px;
+      font-size: 0.875rem;
+    }
+  }
+  
